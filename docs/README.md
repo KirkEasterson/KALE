@@ -1,12 +1,14 @@
-# Luke's Auto-Rice Bootstraping Scripts (LARBS)
+# Kirk's Arch Linux Environment (KALE)
 
-[Official Website: larbs.xyz](http://larbs.xyz)
+[Official Website: kirkeasterson.com/kale](http://kirkeasterson.com/kale)
 
 This is a set of scripts either can either (1) install Arch Linux automatically
 with a typical Arch ISOed USB, and perhaps more prominently (2) automatically
 install and configure all of the prerequisites for an advanced Linux desktop
-environment, using my configs [here](https://github.com/LukeSmithxyz/voidrice)
+environment, using my configs [here](https://github.com/kirkeasterson/kirkeasterson)
 as a base.
+
+This began as a clone of Luke Smith's LARBS. I forked each repository and made my own changes.
 
 
 ## About
@@ -34,8 +36,8 @@ If you have a non-systemd system, you might also have to manually set up Pulseau
 This is just as easy. Log in as the root user and run the following.
 
 ```sh
-curl -LO lukesmith.xyz/larbs.sh #Downloads the script.
-bash larbs.sh #Runs it.
+curl -LO kirkeasterson.com/kale.sh #Downloads the script.
+bash kale.sh #Runs it.
 ```
 
 After prompting you for some settings and some package choices, the system will
@@ -44,7 +46,7 @@ know what that means, don't worry, because I've gone to great lengths to write
 readable instructions about how to go PRO super quick with this system.
 
 Finally, it will use `git` to download my
-[Voidrice](https://github.com/lukesmithxyz/voidrice)
+[dotfiles](https://github.com/kirkeasterson/dotfiles)
 dotfiles and will plop them in their proper location for instant use!
 
 Then, finally, once that all is done, you should be able to log out, then log in
@@ -64,7 +66,7 @@ mind a full wipe. That said, you can run it like this after booting into an Arch
 live environment:
 
 ```sh
-curl -LO lukesmith.xyz/arch.sh #Downloads the script.
+curl -LO kirkeasterson.com/arch.sh #Downloads the script.
 bash arch.sh #Runs it.
 ```
 
@@ -99,12 +101,12 @@ not need to repeat putting it in in other terminal windows.
 
 ## Version
 
-We're close to what can be called LARBS 2.0, and here are some of the major changes since the original version.
+This is Version 1.0, and is a rolling release.
 
 
 - Deployment of my new mutt-wizard for secure offline email configuration instead of config files for the user to manually edit.
 - System is more minimalist/suckless.
-- Luke's build of st is now the default terminal, instead of urxvt.
+- Kirk's build of st is now the default terminal, instead of urxvt.
 - Polybar replaced by i3blocks (with many custom modules), which is lighter on resources and requires fewer dependencies. The polybar build also often failed to build on some machines.
 - Switch from mocp to mpd/ncmpcpp for music.
 - dmenu is used instead of rofi for simplicity's sake.
@@ -118,7 +120,7 @@ We're close to what can be called LARBS 2.0, and here are some of the major chan
 - vi mode is now default in bash (with retention of emacs-mode ctrl-l)
 - Caps lock functions both as a super key and escape key with xcape.
 - Use of the much better, newer version of my shortcut-sync.
-- Use of Luke's `mutt-wizard`.
+- Use of Kirk's `mutt-wizard`.
 - And the repository is *significantly* smaller than it was before, meaning a faster download.
 - A million and one other tweaks and bug fixes.
 
@@ -130,7 +132,7 @@ of having to reproduce your favorite configuration on fresh installs over and
 over. When you're a C-list YouTube celebrity, it gets even more difficult when
 literally thousands of people ask you how to do X or get Y.
 
-The LARBS are a final solution to all of that. These scripts are to be run on a
+KALE is a solution to all of that. These scripts are to be run on a
 fresh install of Arch Linux, and they create a user, install all required
 programs and set up dotfiles directly from Github to give normal people a fairly
 sleek Linux configuration without hundreds of autsitic hours. I did the work, so

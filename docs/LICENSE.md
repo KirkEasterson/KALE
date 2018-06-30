@@ -1,6 +1,6 @@
-# Copyright 2017 Luke Smith, under the GPLv3 License
+# Copyright 2018 Kirk Easterson, under the GPLv3 License
     
-    LARBS is free software: you can redistribute it and/or modify
+    KALE is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.

@@ -31,7 +31,7 @@ do
 done
 
 echo Downloading config files...
-git clone --depth 1 https://github.com/lukesmithxyz/voidrice.git >/dev/null &&
+git clone --depth 1 https://github.com/kirkeasterson/dotfiles.git >/dev/null &&
 	rsync -va voidrice/ /home/$(whoami) >/dev/null &&
 	rm -rf voidrice >/dev/null
 
@@ -46,10 +46,10 @@ git clone --depth 1 https://github.com/lukesmithxyz/voidrice.git >/dev/null &&
 #packer --noconfirm -S polybar || packer --noconfirm -S polybar-git
 
 echo Downloading email setup...
-git clone --depth 1 https://github.com/lukesmithxyz/mutt-wizard.git /home/$(whoami)/.config/mutt >/dev/null
+git clone --depth 1 https://github.com/kirkeasterson/mutt-wizard.git /home/$(whoami)/.config/mutt >/dev/null
 
 dialog --infobox "Generating bash/ranger/qutebrowser shortcuts..." 4 60
-git clone --depth 1 https://github.com/LukeSmithxyz/shortcut-sync.git >/dev/null &&
+git clone --depth 1 https://github.com/kirkeasterson/shortcut-sync.git >/dev/null &&
 	rsync shortcut-sync/shortcuts.sh ~/.scripts/ >/dev/null &&
 	rsync shortcut-sync/folders ~/.scripts/ >/dev/null &&
 	rsync shortcut-sync/configs ~/.scripts/ >/dev/null &&
@@ -58,7 +58,7 @@ git clone --depth 1 https://github.com/LukeSmithxyz/shortcut-sync.git >/dev/null
 
 dialog --infobox "Preparing welcome message..." 4 50
 
-echo "exec_always --no-startup-id notify-send -i ~/.scripts/larbs.png '<b>Welcome to LARBS:</b> Press Super+F1 for the manual.' -t 10000"  >> /home/$(whoami)/.config/i3/config
+echo "exec_always --no-startup-id notify-send -i ~/.scripts/kale.png '<b>Welcome to KALE:</b> Press Super+F1 for the manual.' -t 10000"  >> /home/$(whoami)/.config/i3/config
 
 dialog --infobox "Reseting Pulseaudio..." 4 50
 killall pulseaudio >/dev/null
